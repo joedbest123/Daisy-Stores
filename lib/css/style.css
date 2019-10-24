@@ -1,0 +1,114 @@
+/* general */
+@font-face {
+	font-family: 'Nadia Serif';
+	src: url('../fonts/nadia-serif.eot');
+	src: local('☺'), url('../fonts/nadia-serif.woff') format('woff'), url('../fonts/nadia-serif.ttf') format('truetype'), url('../fonts/nadia-serif.svg#nadisn') format('svg');
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/background.jpg);
+	color: #fff;
+	font-family: "Segoe UI", Segoe, Calibri, Arial, sans-serif;
+	font-size: 100%;
+}
+/* layout */
+
+#nav-main {
+	float: right;
+	margin: 30px 0 0 0;
+}
+
+/* header section */
+#nav-main ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav-main li {
+	float: left;
+	margin: 0 0 0 .5em;
+}
+#nav-main a {
+	display: block;
+	padding: .3em .5em;
+	border-bottom: 1px dashed #e3904a;
+	-moz-border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px;
+	border-radius: 3px 3px 0 0;
+	background: -moz-linear-gradient(hsla(0,0%,100%,.5), hsla(0,0%,100%,0));
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0,0%,100%,.5)), to(hsla(0,0%,100%,0)));
+	font-family: Cambria, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+#nav-main a:hover {
+	background: -moz-linear-gradient(hsla(0,0%,100%,.8), hsla(0,0%,100%,.2));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsla(0,0%,100%,.8)), to(hsla(0,0%,100%,.2)));
+	color: #e3904a;
+}
+
+#dropdown li {
+  float: none;
+}
+
+.top-account {
+  position: relative;
+}
+.top-account ul li {
+  display: none;
+}
+
+.top-account:hover ul li {
+  display: block;
+  position: fixed;
+  top: 5%;
+  width: 10%;
+  background-color: #212226;
+  min-height: 100px;
+  z-index: 1030;
+
+}
+
+.box {
+	overflow: hidden;
+	position: relative;
+	max-width: 328px;
+	-moz-box-shadow: 0 0 20px hsla(0,0%,0%,.5);
+	-webkit-box-shadow: 0 0 20px hsla(0,0%,0%,.5);
+	box-shadow: 0 0 20px hsla(0,0%,0%,.5);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: hsla(0,0%,100%,.3);
+	margin: 20px 0;
+}
+
+.sticky-tag {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.content {
+	margin: 10px auto;
+	align-items: center;
+}
+#footer {
+	background-color: #212226;
+	width: 100%;
+	color: #fff;
+	min-height: 50px;
+}
+
+.footer-items li {
+	padding: 20px;
+	float: right;
+}
+
+.footer-items li:first-child {
+	float: left;
+}
+
+
